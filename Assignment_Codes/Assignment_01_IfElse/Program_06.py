@@ -1,4 +1,4 @@
-ch=input("enter the character")
+ch=input("Enter the character : ")
 if((ch >= 'a')):
      print(ch,"is alphabet")
 elif((ch <= 'z')):
