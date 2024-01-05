@@ -2,7 +2,7 @@
 
 class Parent1:
     def __init__(self):
-        print("In comstructor parent-1")
+        print("In constructor parent-1")
 
     def dispData(self):
         print("In Display data")
