@@ -8,9 +8,7 @@ class Demo:
         print("In Fun Function")
 
 print(dir(Demo))
-
 obj = Demo()
-
 print(dir(obj))
 
 print(obj.x)
