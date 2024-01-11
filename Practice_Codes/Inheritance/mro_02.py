@@ -1,7 +1,7 @@
 #Diamond Problem : 
 class GrandP:
     def Fun(self):
-        print("Grand Parents")
+        print("Grand-Parents")
 
 class Parent1(GrandP):
     def Fun(self):
