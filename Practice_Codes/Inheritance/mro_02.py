@@ -1,5 +1,4 @@
 #Diamond Problem : 
-
 class GrandP:
     def Fun(self):
         print("Grand Parents")
