@@ -9,9 +9,9 @@ class Parent1(GrandP):
         print("Child of Parent 1")
 
 class Parent2(GrandP):
+    pass
     # def Fun(self):
     #     print("Child of Parent 2")
-    pass
 
 class Child(Parent2, Parent1):
     pass
