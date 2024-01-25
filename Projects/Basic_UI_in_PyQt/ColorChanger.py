@@ -1,5 +1,5 @@
-# Create a PyQt window with a QComboBox containing a list of colors. Upon selecting a
-# color, change the background color of the window accordingly.
+''' Create a PyQt window with a QComboBox containing a list of colors.
+ Upon selecting a color, change the background color of the window accordingly.'''
 
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QComboBox
