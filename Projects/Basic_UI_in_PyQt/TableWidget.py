@@ -1,5 +1,5 @@
-# Design a PyQt window that includes a QSlider and a QLabel. Update the label text
-# dynamically to reflect the current value of the slider.
+''' Design a PyQt window that includes a QSlider and a QLabel.
+ Update the label text dynamically to reflect the current value of the slider.'''
 
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QSlider, QLabel, QVBoxLayout
