@@ -1,6 +1,5 @@
-# Develop a PyQt application with a QMainWindow that contains a QMenuBar. Include at
-# least two menus with corresponding actions, and display appropriate messages when
-# actions are triggered.
+''' Develop a PyQt application with a QMainWindow that contains a QMenuBar. 
+Include at least two menus with corresponding actions, and display appropriate messages when 000actions are triggered.'''
 
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMenuBar, QAction,QMessageBox
