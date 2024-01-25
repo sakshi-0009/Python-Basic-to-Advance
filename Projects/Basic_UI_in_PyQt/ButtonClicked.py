@@ -1,5 +1,4 @@
-# Design a PyQt window with a QPushButton and QLabel. Upon clicking the button,
-# change the text of a QLabel to "Button Clicked!"
+''' Design a PyQt window with a QPushButton and QLabel. Upon clicking the button, change the text of a QLabel to "Button Clicked!" '''
 
 import sys
 from PyQt5.QtWidgets import QWidget, QApplication, QVBoxLayout,QLabel, QPushButton
