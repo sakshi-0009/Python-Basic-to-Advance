@@ -1,5 +1,5 @@
-# Create a PyQt window with a progress bar. Implement a function that simulates a task
-# (e.g., file download) and updates the progress bar accordingly.
+''' Create a PyQt window with a progress bar.
+Implement a function that simulates a task (e.g., file download) and updates the progress bar accordingly.'''
 
 # importing libraries
 import urllib.request
