@@ -1,6 +1,5 @@
-# Build a PyQt application with a QRadioButton group for selecting a programming
-# language (e.g., Python, Java, C++). Display a message indicating the selected language
-# when a radio button is clicked.
+''' Build a PyQt application with a QRadioButton group for selecting a programming language (e.g., Python, Java, C++).
+ Display a message indicating the selected language when a radio button is clicked.'''
 
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QRadioButton, QVBoxLayout,QLabel
