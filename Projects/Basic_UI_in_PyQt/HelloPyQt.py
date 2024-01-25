@@ -1,5 +1,5 @@
-# Create a basic PyQt application with a main window that includes a QLabel displaying
-# the text "Hello, PyQt!" in the center of the window.
+''' Create a basic PyQt application with a main window that includes a QLabel displaying
+ the text "Hello, PyQt!" in the center of the window.'''
 
 import sys
 from PyQt5.QtWidgets import QWidget, QApplication, QVBoxLayout, QLabel
