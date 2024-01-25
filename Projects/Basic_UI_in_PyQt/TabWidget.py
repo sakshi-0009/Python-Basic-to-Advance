@@ -1,5 +1,5 @@
-# Build a PyQt application with a QTabWidget containing multiple tabs. Each tab should
-# have different content, such as text, buttons, or images.
+''' Build a PyQt application with a QTabWidget containing multiple tabs.
+Each tab should have different content, such as text, buttons, or images.'''
 
 import sys
 from PyQt5.QtWidgets import (
