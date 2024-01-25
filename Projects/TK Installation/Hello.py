@@ -1,9 +1,10 @@
+# TK Installation : Hello TK!
 import tkinter as tk
 
 class HelloCore2WebApp:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title('Hello Core2Web')
+        self.root.title('Hello TK')
         
         self.root.geometry('300x200')
         
@@ -14,7 +15,7 @@ class HelloCore2WebApp:
         self.hello_button.pack(pady=10)
         
     def display_message(self):
-        self.label.config(text='Hello Core2Web')
+        self.label.config(text='Hello TK')
         
     def run(self):
         self.root.mainloop()
