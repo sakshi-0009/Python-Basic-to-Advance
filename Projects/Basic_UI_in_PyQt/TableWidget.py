@@ -2,36 +2,45 @@
  Update the label text dynamically to reflect the current value of the slider.'''
 
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QSlider, QLabel, QVBoxLayout
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
 
-class SliderApp(QWidget):
+class TableModel(QtCore.QAbstractTableModel):
+    def __init__(self, data):
+        super(TableModel, self).__init__()
+        self._data = data
+    def data(self, index, role):
+        if role == Qt.DisplayRole:
+            # See below for the nested-list data structure.
+            # .row() indexes into the outer list,
+            # .column() indexes into the sub-list
+            return self._data[index.row()][index.column()]
+    def rowCount(self, index):
+        # The length of the outer list.
+        return len(self._data)
+
+    def columnCount(self, index):
+        # The following takes the first sub-list, and returns
+        # the length (only works if all rows are an equal length)
+        return len(self._data[0])
+
+class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        
-        self.setWindowTitle("Slider App")
-        self.setGeometry(100, 100, 400, 200) # (x, y, width, height)
-        layout = QVBoxLayout()
-        
-        # Create a QSlider widget
-        self.slider = QSlider(Qt.Horizontal, self)
-        layout.addWidget(self.slider)
-        
-        # Create a QLabel widget
-        self.label = QLabel("Slider Value: 0", self)
-        layout.addWidget(self.label)
-        
-        # Connect the slider's valueChanged signal to the update_label slot
-        self.slider.valueChanged.connect(self.update_label)
-        self.setLayout(layout)
-
-    # Slot function to update the label with the current slider value
-    def update_label(self):
-        value = self.slider.value()
-        self.label.setText(f"Slider Value: {value}")
-        
+        self.table = QtWidgets.QTableView()
+        data = [
+        [4, 9, 2],
+        [1, 0, 0],
+        [3, 5, 0],
+        [3, 3, 2],
+        [7, 8, 9],
+        ]
+        self.model = TableModel(data)
+        self.table.setModel(self.model)
+        self.setCentralWidget(self.table)
+    
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = SliderApp()
+    app=QtWidgets.QApplication(sys.argv)
+    window=MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    app.exec_()

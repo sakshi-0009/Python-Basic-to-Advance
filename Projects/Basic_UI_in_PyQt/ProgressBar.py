@@ -43,11 +43,11 @@ class ProgressBar(QWidget):
     # method to download any file using urllib
     def Download(self):
         # specify the url of the file which is to be downloaded
-        down_url ='https://www.biencaps.com/static/media/shashi-sir.ce188ff3.png' 
+        down_url ='https://en.wikipedia.org/wiki/Ram_Mandir' 
         #specify download url here
         
         # specify save location where the file is to be saved
-        save_loc = '/home/abhishekaslk/Desktop/PyQt-Assignment/image.png'
+        save_loc = ' '
 
         # Downloading using urllib
         urllib.request.urlretrieve(down_url,save_loc, self.Handle_Progress)
