@@ -16,5 +16,5 @@ def fun(a, b):
 
 print("Start code")
 fun(10,20)
-fun(10,"Sakshi")
+# fun(10,"Sakshi")      TypeError: unsupported operand type(s) for +: 'int' and 'str'
 print("End code")
