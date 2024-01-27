@@ -19,5 +19,6 @@ class Demo:
 
 obj = Demo()
 obj.fun()
+
 obj = None
 # obj.gun()       AttributeError: 'NoneType' object has no attribute 'gun'
