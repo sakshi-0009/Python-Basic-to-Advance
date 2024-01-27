@@ -1,1 +1,1 @@
-print(list1[4])     IndexError: list index out of range
+print(players[1])       KeyError: 1
