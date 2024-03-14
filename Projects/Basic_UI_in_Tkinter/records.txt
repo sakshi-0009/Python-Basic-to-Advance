@@ -1,0 +1,3 @@
+Name: sakshi, Phone: 7447652354, Gender: female, Payment mode: cash, Food Service: 1
+Name: sakshi, Phone: 7447652354, Gender: female, Payment mode: online, Food Service: 1
+Name: , Phone: , Gender: , Payment mode: , Food Service: 0
